@@ -1,0 +1,25 @@
+.hero {
+    background-color: $light-grey;
+    
+    width: 100%;
+    
+    & .wrapper {
+        @include space-between-center-down;
+        padding-top: 7.5rem;
+    }
+
+    /*&__item {
+        position: relative;
+        overflow: hidden;
+
+        &--overlay {
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            height: 100%;
+            width: 100%;
+            background-color: rebeccapurple;
+            z-index: 2;
+        }
+    } */
+}

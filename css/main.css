@@ -18,6 +18,29 @@ ul {
   display: flex;
   margin: 0px auto; }
 
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  vertical-align: bottom; }
+
+.video {
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  position: relative; }
+  .video--overlay {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    background-color: blueviolet;
+    z-index: 2; }
+
 html {
   font-size: 62.5%; }
 
@@ -68,6 +91,46 @@ h6 {
   margin-bottom: 1rem;
   text-transform: uppercase; }
 
+.hero--small-text {
+  color: #080808;
+  font-size: 1.4rem;
+  line-height: 1;
+  margin-bottom: 2.5rem;
+  text-transform: uppercase; }
+
+#heroHeading {
+  margin-bottom: 5rem; }
+
+.cta {
+  color: #252525;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-transform: uppercase; }
+
+.cta {
+  overflow: hidden;
+  padding: 1.6rem 0rem;
+  position: relative; }
+  .cta::after {
+    content: '';
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    height: 2px;
+    width: 25%;
+    background-color: #252525;
+    transition: all 0.5s cubic-bezier(0.6, 0.04, 0.98, 0.335); }
+  .cta i {
+    opacity: 0;
+    line-height: 0;
+    margin: 0;
+    margin-left: 5rem;
+    transition: all 0.5s cubic-bezier(0.6, 0.04, 0.98, 0.335); }
+  .cta:hover i {
+    opacity: 1; }
+  .cta:hover::after {
+    width: 100%; }
+
 .header {
   position: fixed;
   top: 0%;
@@ -90,3 +153,51 @@ h6 {
       background-color: #080808; }
       .header .menu__container .menu--line:not(:last-child) {
         margin-bottom: 1rem; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  width: 100%; }
+
+.hero .grid {
+  grid-template-columns: 1fr;
+  grid-template-rows: 60% 40%;
+  row-gap: 5rem; }
+  .hero .grid__item {
+    height: 100%;
+    width: 100%; }
+    .hero .grid__item img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover; }
+    .hero .grid__item--1 {
+      display: none; }
+    .hero .grid__item--2 {
+      grid-row: 1 / 2; }
+    .hero .grid__item--3 {
+      grid-row: 2 / 3; }
+    .hero .grid__item--4 {
+      display: none; }
+
+.hero {
+  background-color: #f4f4f4;
+  width: 100%;
+  /*&__item {
+        position: relative;
+        overflow: hidden;
+
+        &--overlay {
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            height: 100%;
+            width: 100%;
+            background-color: rebeccapurple;
+            z-index: 2;
+        }
+    } */ }
+  .hero .wrapper {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 7.5rem; }

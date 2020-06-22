@@ -12,6 +12,12 @@ body {
 ul {
   list-style: none; }
 
+.wrapper {
+  width: 90%;
+  max-width: 1600px;
+  display: flex;
+  margin: 0px auto; }
+
 html {
   font-size: 62.5%; }
 
@@ -23,6 +29,7 @@ body {
 a {
   color: #252525;
   display: inline-block;
+  outline-width: 0%;
   text-decoration: none; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -47,3 +54,39 @@ h5 {
 
 h6 {
   font-size: 2rem; }
+
+.logo {
+  color: #080808;
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase; }
+
+.menu--text {
+  font-size: 1.2rem;
+  line-height: 1;
+  margin-bottom: 1rem;
+  text-transform: uppercase; }
+
+.header {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  z-index: 5;
+  padding: 1.5rem 0rem;
+  width: 100%; }
+  .header .wrapper {
+    justify-content: space-between;
+    align-items: center; }
+  .header .menu__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer; }
+    .header .menu__container .menu--line {
+      height: 1px;
+      width: 100%;
+      background-color: #080808; }
+      .header .menu__container .menu--line:not(:last-child) {
+        margin-bottom: 1rem; }

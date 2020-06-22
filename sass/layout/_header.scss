@@ -1,0 +1,28 @@
+.header {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    z-index: 5;
+    padding: 1.5rem 0rem;
+    width: 100%;
+
+    & .wrapper {
+        @include space-between-center;
+    }
+
+    & .menu__container {
+        display: flex;
+        @include space-between-center-down;
+        cursor: pointer;
+
+        & .menu--line {
+            height: 1px;
+            width: 100%;
+            background-color: $dark-text;
+            
+            &:not(:last-child) {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}

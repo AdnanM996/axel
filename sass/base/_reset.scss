@@ -13,3 +13,10 @@ body {
 ul {
     list-style: none;
 }
+
+.wrapper {
+    width: 90%;
+    max-width: 1600px;
+    display: flex;
+    margin: 0px auto;
+}

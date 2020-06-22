@@ -1,6 +1,5 @@
 .hero {
     background-color: $light-grey;
-    
     width: 100%;
     
     & .wrapper {
@@ -22,4 +21,9 @@
             z-index: 2;
         }
     } */
+}
+
+.what-we-do {
+    padding: $padding-large;
+    background-color: $white;
 }

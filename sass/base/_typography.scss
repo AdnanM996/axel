@@ -20,6 +20,7 @@ a {
 h1, h2, h3, h4, h5, h6 {
     color: $dark-text;
     font-weight: 700;
+    margin-bottom: 5rem;
 }
 
 h1 {
@@ -64,4 +65,16 @@ h6 {font-size: 2rem;}
     font-size: 1.6rem;
     font-weight: 400;
     text-transform: uppercase;
+}
+
+.text--big {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 3.5rem;
+}
+
+.text--small {
+    margin-bottom: 2.5rem;
+    color: $light-text;
+    line-height: 1.6;
 }

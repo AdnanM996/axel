@@ -125,6 +125,28 @@ h6 {
 .our-services--heading {
   margin-top: -3.5rem; }
 
+.footer--link {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: all .3s ease; }
+  .footer--link:hover {
+    color: rgba(255, 255, 255, 0.5); }
+
+.footer--list a {
+  font-size: 2.5rem;
+  transition: all 0.5s cubic-bezier(0.6, 0.04, 0.98, 0.335); }
+  .footer--list a:hover {
+    color: rgba(255, 255, 255, 0.5); }
+
+.footer__item--3 p {
+  font-size: 1.4rem;
+  margin-bottom: 2.5rem; }
+
+.footer__item--3 small {
+  font-size: 1rem; }
+
 .cta {
   overflow: hidden;
   padding: 1.6rem 0rem;
@@ -201,6 +223,29 @@ h6 {
       .header .menu__container .menu--line:not(:last-child) {
         margin-bottom: 1rem; }
 
+.footer__form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 1.2rem;
+  margin-bottom: 5rem; }
+  .footer__form input[type="email"] {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    display: inline-block;
+    outline-width: 0;
+    width: 100%; }
+  .footer__form button[type="submit"] {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    outline-width: none; }
+  .footer__form::placeholder {
+    color: #fff; }
+
 .grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -208,7 +253,7 @@ h6 {
 
 .hero .grid {
   grid-template-columns: 1fr;
-  grid-template-rows: 60% 40%;
+  grid-template-rows: repeat(2, auto);
   row-gap: 5rem; }
   .hero .grid__item {
     height: 100%;
@@ -271,6 +316,29 @@ h6 {
         margin-bottom: 5rem; }
   .our-services .grid__item--2 {
     display: none; }
+
+.footer {
+  background-color: #080808;
+  color: #fff;
+  padding: 5rem 0rem; }
+  .footer .wrapper {
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column; }
+  .footer__item:not(:last-child) {
+    margin-bottom: 5rem; }
+  .footer__item ul {
+    margin-bottom: 5rem; }
+  .footer li:not(:last-child) {
+    margin-bottom: 1.2rem; }
+  .footer h5 {
+    color: #fff; }
+  .footer--list {
+    display: flex; }
+    .footer--list li:not(:last-child) {
+      margin-right: 1.6rem; }
+    .footer--list a {
+      color: #fff; }
 
 .hero {
   background-color: #f4f4f4;

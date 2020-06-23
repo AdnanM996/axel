@@ -7,7 +7,7 @@
 .hero {
     & .grid {
         grid-template-columns: 1fr;
-        grid-template-rows: 60% 40%;
+        grid-template-rows: repeat(2, auto);
         row-gap: 5rem;
 
         &__item {

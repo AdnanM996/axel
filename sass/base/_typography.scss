@@ -91,3 +91,39 @@ h6 {font-size: 2rem;}
 .our-services--heading {
     margin-top: -3.5rem;
 }
+
+.footer {
+    &--link {
+        color: $white;
+        font-size: 1.2rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        transition: all .3s ease;
+
+        &:hover {
+            color: rgba($white, .5);
+        }
+    }
+
+    &--list {
+        & a {
+            font-size: 2.5rem;
+            transition: all .5s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+
+            &:hover {
+                color: rgba($white, .5);
+            }
+        }
+    }
+
+    &__item--3 {
+        & p {
+            font-size: 1.4rem;
+            margin-bottom: 2.5rem;
+        }
+
+        & small {
+            font-size: 1rem;
+        }
+    }
+}

@@ -1,0 +1,43 @@
+.footer {
+    background-color: $dark-text;
+    color: $white;
+    padding: $padding-small;
+
+    & .wrapper {
+        @include space-between-start-down;
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 5rem;
+        }
+
+        & ul {
+            margin-bottom: 5rem;
+        }
+    }
+
+    & li {
+        &:not(:last-child) {
+            margin-bottom: 1.2rem;
+        }  
+    }
+
+    & h5 {
+        color: $white;
+    }
+
+    &--list {
+        display: flex;
+
+        & li {
+            &:not(:last-child) {
+                margin-right: 1.6rem;
+            }  
+        }
+
+        & a {
+            color: $white;
+        }
+    }
+}

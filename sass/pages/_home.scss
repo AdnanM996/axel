@@ -50,3 +50,16 @@
         width: 100%;
     }
 }
+
+.get-started {
+    background-image: url(../../imgs/get-started.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: $padding-large;
+
+    & .wrapper {
+        @include space-between-start-down;
+    }
+}

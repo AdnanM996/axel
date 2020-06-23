@@ -318,3 +318,15 @@ h6 {
     align-items: flex-start;
     flex-direction: column;
     width: 100%; }
+
+.get-started {
+  background-image: url(../../imgs/get-started.jpg);
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10rem 0rem; }
+  .get-started .wrapper {
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column; }

@@ -36,3 +36,17 @@
         @include space-between-start-down;
     }
 }
+
+.our-clinets {
+    background-color: $light-grey;
+    padding: $padding-large;
+}
+
+.our-services {
+    background-color: $light-grey;
+
+    & .wrapper {
+        @include space-between-start-down;
+        width: 100%;
+    }
+}

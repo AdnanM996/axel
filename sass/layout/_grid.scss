@@ -95,3 +95,32 @@
         }
     }
 }
+
+.our-services {
+    & .grid {
+        grid-template-columns: 1fr;
+
+        &__item {
+
+            &--1 {
+                background-color: $white;
+                padding: 0rem 2.5rem;
+
+                & .grid__inner {
+                    display: grid;
+                    grid-template-columns: 1fr;
+
+                    &--item {
+                        &:not(:last-child) {
+                            margin-bottom: 5rem;
+                        }
+                    }
+                }
+            }
+
+            &--2 {
+                display: none;
+            }
+        }
+    }
+}

@@ -74,7 +74,8 @@ h4 {
   font-size: 2.8rem; }
 
 h5 {
-  font-size: 2.4rem; }
+  font-size: 2.4rem;
+  margin-bottom: 2.5rem; }
 
 h6 {
   font-size: 2rem; }
@@ -116,10 +117,13 @@ h6 {
 .text--small {
   margin-bottom: 2.5rem;
   color: #252525;
-  line-height: 1.6; }
+  line-height: 1.5; }
 
 .our-work h3 {
   margin: 1.6rem 0rem; }
+
+.our-services--heading {
+  margin-top: -3.5rem; }
 
 .cta {
   overflow: hidden;
@@ -255,6 +259,19 @@ h6 {
     justify-content: center;
     align-items: center; }
 
+.our-services .grid {
+  grid-template-columns: 1fr; }
+  .our-services .grid__item--1 {
+    background-color: #fff;
+    padding: 0rem 2.5rem; }
+    .our-services .grid__item--1 .grid__inner {
+      display: grid;
+      grid-template-columns: 1fr; }
+      .our-services .grid__item--1 .grid__inner--item:not(:last-child) {
+        margin-bottom: 5rem; }
+  .our-services .grid__item--2 {
+    display: none; }
+
 .hero {
   background-color: #f4f4f4;
   width: 100%;
@@ -289,3 +306,15 @@ h6 {
     justify-content: space-between;
     align-items: flex-start;
     flex-direction: column; }
+
+.our-clinets {
+  background-color: #f4f4f4;
+  padding: 10rem 0rem; }
+
+.our-services {
+  background-color: #f4f4f4; }
+  .our-services .wrapper {
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%; }

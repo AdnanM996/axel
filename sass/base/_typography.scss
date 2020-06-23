@@ -30,7 +30,10 @@ h1 {
 h2 {font-size: 3.6rem;}
 h3 {font-size: 3rem;}
 h4 {font-size: 2.8rem;}
-h5 {font-size: 2.4rem;}
+h5 {
+    font-size: 2.4rem;
+    margin-bottom: 2.5rem;
+}
 h6 {font-size: 2rem;}
 
 .logo {
@@ -76,11 +79,15 @@ h6 {font-size: 2rem;}
 .text--small {
     margin-bottom: 2.5rem;
     color: $light-text;
-    line-height: 1.6;
+    line-height: 1.5;
 }
 
 .our-work {
     & h3 {
         margin: 1.6rem 0rem;
     }
+}
+
+.our-services--heading {
+    margin-top: -3.5rem;
 }

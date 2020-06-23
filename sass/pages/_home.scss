@@ -43,11 +43,10 @@
 }
 
 .our-services {
-    background-color: $light-grey;
+    background-color: $white;
 
     & .wrapper {
         @include space-between-start-down;
-        width: 100%;
     }
 }
 

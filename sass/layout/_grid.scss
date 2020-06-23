@@ -10,6 +10,11 @@
         grid-template-rows: repeat(2, auto);
         row-gap: 5rem;
 
+        @media only screen and(min-width: $medium-device) {
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: 5rem auto 5rem auto auto;
+        }
+
         &__item {
             height: 100%;
             width: 100%;
@@ -22,14 +27,31 @@
 
             &--1 {
                 display: none;
+
+                @media only screen and(min-width: $medium-device) {
+                    display: block;
+                    grid-column: 1 / 2;
+                    grid-row: 2 / 3;
+                }
             }
 
             &--2 {
                 grid-row: 1 / 2;
+                @media only screen and(min-width: $medium-device) {
+                    display: block;
+                    grid-column: 2 / 3;
+                    grid-row: 1 / 4;
+                    padding-left: 5rem;
+                }
             }
 
             &--3 {
                 grid-row: 2 / 3;
+                @media only screen and(min-width: $medium-device) {
+                    display: block;
+                    grid-column: 1 / 4;
+                    grid-row: 4 / 5;
+                }
             }
 
             &--4 {
@@ -58,6 +80,10 @@
                 grid-column: 2 / 3;
                 grid-row: 1 / 2;
                 margin: 2.5rem 0rem 0rem -2.5rem;
+
+                @media only screen and (min-width: $medium-device) {
+                    margin: 10rem 0rem 0rem -10rem; 
+                }
             }
 
             &--3 {
@@ -72,7 +98,23 @@
     & .grid {
         grid-template-columns: repeat(1, 1fr);
 
+        @media only screen and(min-width: $medium-device) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 10rem auto 10rem auto 10rem auto auto;
+            column-gap: 7.5rem;
+            //row-gap: 5rem;
+        }
+        
+
         &__item {
+            height: 100%;
+            width: 100%;
+
+            & img {
+                height: 42.5rem;
+                max-width: 100%;
+                object-fit: cover;
+            }
             &:not(:last-child) {
                 margin-bottom: 5rem;
             }
@@ -87,10 +129,50 @@
                 color: rgba($dark-text, .5);
             }
 
+            &--1 {
+                @media only screen and(min-width: $medium-device) {
+                    grid-column: 1 / 2;
+                    grid-row: 1 / 3;
+                }
+                
+            }
+
+            &--2 {
+                @media only screen and(min-width: $medium-device) {
+                    grid-column: 2 / 3;
+                    grid-row: 2 / 4;
+                    
+                }
+                
+            }
+
+            &--3 {
+                @media only screen and(min-width: $medium-device) {
+                    grid-column: 1 / 2;
+                    grid-row: 3 / 5;
+                }
+                
+            }
+
+            &--4 {
+                @media only screen and(min-width: $medium-device) {
+                    grid-column: 2 / 3;
+                    grid-row: 4 / 6;
+                    
+                }
+                
+            }
+
             &--5 {
                 display: flex;
                 justify-content: center;
                 align-items: center;
+
+                @media only screen and (min-width: $medium-device) {
+                    grid-column: 1 / -1;
+                    grid-row: 6 / 7;
+                    
+                }
             }
         }
     }
@@ -99,6 +181,9 @@
 .our-services {
     & .grid {
         grid-template-columns: 1fr;
+        @media only screen and(min-width: $medium-device) {
+            grid-template-columns: repeat(2, auto);
+        }
 
         &__item {
 
@@ -106,9 +191,21 @@
                 background-color: $white;
                 padding: 0rem 2.5rem;
 
+                & .wrapper {
+                    width: 90%;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                }
+
                 & .grid__inner {
                     display: grid;
                     grid-template-columns: 1fr;
+
+                    @media only screen and(min-width: $medium-device) {
+                        grid-template-columns: repeat(2, 1fr);
+                        width: 100%;
+                        column-gap: 5rem;
+                    }
 
                     &--item {
                         &:not(:last-child) {
@@ -120,6 +217,10 @@
 
             &--2 {
                 display: none;
+                @media only screen and(min-width: $medium-device) {
+                    display: block;
+                    margin: 10rem 0rem -10rem 0rem;
+                }
             }
         }
     }

@@ -33,3 +33,38 @@
         }
     }
 }
+
+.btn {
+    background-color: transparent;
+    border: 1px solid $dark-text;
+    color: $dark-text;
+    font-size: 1.6rem;
+    font-weight: 400;
+    overflow: hidden;
+    padding: 1.6rem 6.4rem;
+    position: relative;
+    text-transform: uppercase;
+    transition: all .5s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+    z-index: 2;
+    
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0%;
+        bottom: 0%;
+        z-index: -1;
+        height: 100%;
+        width: 100%;
+        background-color: $dark-text;
+        transition: all .5s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+        transform: translateY(100%);
+    }
+
+    &:hover {
+        color: $white;
+
+        &::after {
+            transform: translateY(0%);
+        }
+    }
+}

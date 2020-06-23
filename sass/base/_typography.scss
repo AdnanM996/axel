@@ -78,3 +78,9 @@ h6 {font-size: 2rem;}
     color: $light-text;
     line-height: 1.6;
 }
+
+.our-work {
+    & h3 {
+        margin: 1.6rem 0rem;
+    }
+}

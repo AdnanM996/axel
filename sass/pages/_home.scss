@@ -27,3 +27,12 @@
     padding: $padding-large;
     background-color: $white;
 }
+
+.our-work {
+    padding: $padding-large;
+    background-color: $white;
+
+    & .wrapper {
+        @include space-between-start-down;
+    }
+}

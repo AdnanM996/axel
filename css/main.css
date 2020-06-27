@@ -103,7 +103,7 @@ h6 {
   text-transform: uppercase; }
 
 #heroHeading {
-  margin-bottom: 5rem; }
+  margin-bottom: 3.5rem; }
 
 .cta {
   color: #252525;
@@ -308,7 +308,7 @@ h6 {
   @media only screen and (min-width: 992px) {
     .hero .grid {
       grid-template-columns: repeat(12, 1fr);
-      grid-template-rows: 10rem auto 10rem; } }
+      grid-template-rows: 10rem 5rem 25rem auto 17rem; } }
   .hero .grid__item {
     height: 100%;
     width: 100%; }
@@ -326,7 +326,7 @@ h6 {
       @media only screen and (min-width: 992px) {
         .hero .grid__item--1 {
           grid-column: 2 / 4;
-          grid-row: 2 / 3; } }
+          grid-row: 2 / 4; } }
     .hero .grid__item--2 {
       grid-row: 1 / 2; }
       @media only screen and (min-width: 768px) {
@@ -337,7 +337,7 @@ h6 {
           padding-left: 5rem; } }
       @media only screen and (min-width: 992px) {
         .hero .grid__item--2 {
-          grid-column: 4 / 8;
+          grid-column: 4 / 9;
           grid-row: 1 / -1; } }
     .hero .grid__item--3 {
       grid-row: 2 / 3; }
@@ -349,7 +349,7 @@ h6 {
       @media only screen and (min-width: 992px) {
         .hero .grid__item--3 {
           grid-column: 7 / -1;
-          grid-row: 2 / 4;
+          grid-row: 3 / 4;
           position: relative;
           z-index: 2; } }
     .hero .grid__item--4 {
@@ -357,8 +357,8 @@ h6 {
       @media only screen and (min-width: 992px) {
         .hero .grid__item--4 {
           display: inline-block;
-          grid-column: 11 / -1;
-          grid-row: 3 / -1; } }
+          grid-column: 10 / -1;
+          grid-row: 5 / -1; } }
 
 .what-we-do .grid {
   grid-template-columns: repeat(2, 1fr);
@@ -528,8 +528,7 @@ h6 {
   .hero .wrapper {
     justify-content: space-between;
     align-items: center;
-    flex-direction: column;
-    padding-top: 7.5rem; }
+    flex-direction: column; }
 
 .what-we-do {
   padding: 10rem 0rem;

@@ -16,7 +16,7 @@
 
         @media only screen and(min-width: $large-device) {
             grid-template-columns: repeat(12, 1fr);
-            grid-template-rows: 10rem auto 10rem;        
+            grid-template-rows: 10rem 5rem 25rem auto 17rem;       
         }
 
         &__item {
@@ -40,7 +40,7 @@
 
                 @media only screen and(min-width: $large-device) {
                     grid-column: 2 / 4;
-                    grid-row: 2 / 3;
+                    grid-row: 2 / 4;
                 }
             }
 
@@ -55,7 +55,7 @@
                 }
 
                 @media only screen and(min-width: $large-device) {
-                    grid-column: 4 / 8;
+                    grid-column: 4 / 9;
                     grid-row: 1 / -1;
                 }
             }
@@ -71,7 +71,7 @@
 
                 @media only screen and(min-width: $large-device) {
                     grid-column: 7 / -1;
-                    grid-row: 2 / 4;
+                    grid-row: 3 / 4;
                     position: relative;
                     z-index: 2;
                 }
@@ -82,8 +82,8 @@
 
                 @media only screen and(min-width: $large-device) {
                     display: inline-block;
-                    grid-column: 11 / -1;
-                    grid-row: 3 / -1;
+                    grid-column: 10 / -1;
+                    grid-row: 5 / -1;
                 }
             }
         }

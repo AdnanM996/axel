@@ -1,0 +1,22 @@
+.nav {
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    left: 0%;
+    z-index: 5;
+    height: 100vh;
+    width: 100%;
+    background-color: $dark-text;
+    display: none;
+
+    & .wrapper {
+        padding: $padding-large;
+        @include space-between-top;
+        width: 70%;
+    }    
+}
+
+.nav--open {
+    display: block;
+}

@@ -2,7 +2,7 @@
     position: fixed;
     top: 0%;
     left: 0%;
-    z-index: 5;
+    z-index: 555;
     padding: 1.5rem 0rem;
     width: 100%;
 
@@ -14,15 +14,30 @@
         display: flex;
         @include space-between-center-down;
         cursor: pointer;
+        width: 36px;
 
         & .menu--line {
             height: 1px;
             width: 100%;
             background-color: $dark-text;
+            transition: all .3s ease-in-out;
             
             &:not(:last-child) {
                 margin-bottom: 1rem;
             }
         }
     }
+}
+
+.menu--line--top--close {
+    transform: translateY(0) translateX(0px) rotate(40deg);
+    display: inline-block;
+    //margin-top: 10px;
+    transition: all .5s ease;
+}
+
+.menu--line--bottom--close {
+    transform: translateY(-11px) translateX(0px) rotate(-40deg);
+    display: inline-block;
+    transition: all .3s ease-in-out;
 }

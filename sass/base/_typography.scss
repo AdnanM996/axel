@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
 
 html {
     font-size: 62.5%;
@@ -18,8 +19,9 @@ a {
 }
 
 h1, h2, h3, h4, h5, h6 {
+    font-family: 'Libre Baskerville', serif;
     color: $dark-text;
-    font-weight: 700;
+    font-weight: 400;
     margin-bottom: 5rem;
 }
 
@@ -38,7 +40,7 @@ h6 {font-size: 2rem;}
 
 .logo {
     color: $dark-text;
-    font-size: 2.4rem;
+    font-size: 3.6rem;
     font-weight: 700;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -46,7 +48,7 @@ h6 {font-size: 2rem;}
 
 .menu--text {
     font-size: 1.2rem;
-    line-height: 1;
+    line-height: 1.4;
     margin-bottom: 1rem;
     text-transform: uppercase;
 }
@@ -125,5 +127,29 @@ h6 {font-size: 2rem;}
         & small {
             font-size: 1rem;
         }
+    }
+}
+
+.nav {
+    color: $white;
+    font-family: 'Libre Baskerville', serif;
+
+    & h3 {
+        color: $white;
+    }
+
+    &--link,
+    &--small {
+        color: $white;
+        line-height: 1.6;
+    }
+
+
+    &--link {
+        font-size: 5.6rem;     
+    }
+
+    &--small {
+        font-size: 2.4rem;
     }
 }

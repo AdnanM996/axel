@@ -2,8 +2,16 @@
     background-color: $light-grey;
     width: 100%;
     
+    @media only screen and(min-width: $medium-device) {
+        height: 100vh;
+    }
+    
     & .wrapper {
         @include space-between-center-down;
+
+        @media only screen and(min-width: $medium-device) {
+            height: 100vh;
+        }
     }
 }
 
@@ -24,6 +32,24 @@
 .our-clinets {
     background-color: $light-grey;
     padding: $padding-large;
+
+    & .wrapper {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    & .icon__container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    & img {
+        display: inline-block;
+        height: 150px;
+        width: 250px;
+        margin: 0px 50px 50px 0px;
+    }
 }
 
 .our-services {
@@ -36,7 +62,7 @@
 
 .get-started {
     background-image: url(../../imgs/get-started.jpg);
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -44,5 +70,6 @@
 
     & .wrapper {
         @include space-between-start-down;
+        width: 85%;
     }
 }

@@ -67,4 +67,25 @@
             transform: translateY(0%);
         }
     }
+
+    &--full {
+        @extend .btn;
+        color: $white;
+        border: 1px solid $white;
+        margin: 2.5rem 0rem;
+
+        &::after {
+            background-color: $white;
+        }
+
+        &:hover {
+            color: $dark-text;
+        }
+    }
+}
+
+.hero {
+    & .cta {
+        margin: 0px;
+    }
 }

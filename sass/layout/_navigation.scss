@@ -5,16 +5,69 @@
     bottom: 0%;
     left: 0%;
     z-index: 5;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background-color: $dark-text;
     display: none;
+    overflow-y: scroll;
+     
+    @media only screen and(min-width: $medium-device) {
+        overflow-y: hidden;
+    }
 
     & .wrapper {
         padding: $padding-large;
-        @include space-between-top;
-        width: 70%;
-    }    
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+
+        @media only screen and(min-width: $medium-device) {
+            @include space-between-top;
+            flex-direction: row;
+        }
+
+        @media only screen and(min-width: $large-device) {
+            @include space-between-top;
+            flex-direction: row;
+            width: 70%;
+        }
+    }  
+    
+    &__right {
+        
+        @media only screen and(min-width: $medium-device) {
+            text-align: right;
+        }
+
+        &--top {
+            margin-bottom: 7.5rem;
+            & li {
+                &:not(:last-child) {
+                    margin-bottom: 2.5rem;
+                }
+            }
+        }
+    }
+
+    &--social {
+        display: flex;
+        justify-content: flex-start;
+
+        @media only screen and (min-width: $medium-device) {
+            justify-content: flex-end;
+        }
+
+        & li {
+            &:not(:last-child) {
+                margin-right: 2.5rem;
+            }
+        }
+
+        & a {
+            color: $white;
+            font-size: 2.4rem;
+        }
+    }
 }
 
 .nav--open {

@@ -61,8 +61,9 @@ h6 {font-size: 2rem;}
     text-transform: uppercase;
 }
 
-#heroHeading {
-    margin-bottom: 3.5rem;
+.hero--heading {
+    margin-bottom: 18px;
+    font-size: 36px;
 }
 
 .cta {
@@ -138,18 +139,48 @@ h6 {font-size: 2rem;}
         color: $white;
     }
 
+    & li {
+        opacity: 0;
+        transform: translateY(-25px);
+        transition: all .3s ease;
+    }
+
     &--link,
     &--small {
         color: $white;
         line-height: 1.6;
+        overflow: hidden;
+        position: relative;
+        z-index: 2;
+        transition: all .3s ease;
+
+        &:hover {
+            color: $dark-grey;
+            transform: scale(0.9);
+        }
     }
 
 
     &--link {
-        font-size: 5.6rem;     
+        font-size: 2.8rem;
+        @media only screen and(min-width: $medium-device) {
+            font-size: 5.6rem; 
+        }    
+
+        &::after {
+            height: 1rem;
+        }
     }
 
     &--small {
-        font-size: 2.4rem;
+        font-size: 1.2rem;
+
+        @media only screen and(min-width: $medium-device) {
+            font-size: 2.4rem; 
+        }  
+
+        &::after {
+            height: .5rem;
+        }
     }
 }

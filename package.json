@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.13.1",
-    "gsap": "^3.3.4"
+    "gsap": "^3.3.4",
+    "smooth-scrollbar": "^8.5.2"
   }
 }

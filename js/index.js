@@ -11,12 +11,20 @@ var options = {
 
 Scrollbar.init(document.querySelector('#my-scrollbar'), options);
 
+//loader
+const loader = document.querySelector('.loader');
+
+window.addEventListener('load', () => {
+    loader.style.transform = 'translateY(-100%)';
+    loader.style.opacity = '0';
+});
+
 //Animations
-let controller = new ScrollMagic.Controller();
+window.addEventListener('DOMContentLoaded', ()=> {
+    let controller = new ScrollMagic.Controller();
 let timeLine = new TimelineMax();
 
-window.addEventListener('load', ()=> {
-    timeLine
+timeLine
 .staggerTo('.grid__item--overlay', 1.5, {
     x: '100%',
     ease: Power3.easeInOut
@@ -45,7 +53,6 @@ let scene = new ScrollMagic.Scene({})
 .setTween(timeLine)
 .addTo(controller);
 
-});
 //Timeline 2
 
 let timeLine2 = new TimelineMax();
@@ -209,6 +216,7 @@ let scene6 = new ScrollMagic.Scene({
 
 .setTween(timeLine6)
 .addTo(controller);
+});
 
 const logo = document.querySelector('.logo');
 const menu = document.querySelector('.menu__container');

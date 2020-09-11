@@ -8,6 +8,7 @@ html,
 body {
     height: 100%;
     width: 100%;
+    overflow-x: hidden;
 }
 
 .loader {
@@ -35,11 +36,6 @@ body {
 
 ul {
     list-style: none;
-}
-
-#my-scrollbar {
-    width: 100%;
-    height: 100%;
 }
 
 .wrapper {
@@ -71,7 +67,6 @@ img {
         left: 0%;
         height: 100%;
         width: 100%;
-        background-color: blueviolet;
         z-index: 2;
     }
 }

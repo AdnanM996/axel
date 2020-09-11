@@ -8,7 +8,9 @@
 html,
 body {
   height: 100%;
-  width: 100%;
+  width: 100%; }
+
+body {
   overflow-x: hidden; }
 
 .loader {
@@ -581,8 +583,7 @@ h6 {
     @media only screen and (min-width: 768px) {
       .our-services .grid__item--2 {
         display: block;
-        margin: 10rem 0rem -10rem 0rem;
-        overflow: hidden; } }
+        margin: 10rem 0rem -10rem 0rem; } }
 
 .footer {
   background-color: #080808;

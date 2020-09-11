@@ -54,8 +54,6 @@
 
 .our-services {
     background-color: $white;
-    //overflow: hidden;
-
     & .wrapper {
         @include space-between-start-down;
     }
